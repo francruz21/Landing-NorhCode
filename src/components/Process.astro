@@ -1,0 +1,78 @@
+---
+const steps = [
+  {
+    number: '01',
+    title: 'Descubrimiento',
+    description: 'Analizamos tu negocio, objetivos y necesidades. Entendemos el problema antes de proponer soluciones.',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>`,
+  },
+  {
+    number: '02',
+    title: 'Planificación',
+    description: 'Diseñamos la arquitectura, definimos el alcance y creamos un roadmap claro con entregables concretos.',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15a2.25 2.25 0 012.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z" /></svg>`,
+  },
+  {
+    number: '03',
+    title: 'Desarrollo',
+    description: 'Construimos tu producto con metodologías ágiles, entregas iterativas y comunicación constante.',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" /></svg>`,
+  },
+  {
+    number: '04',
+    title: 'Lanzamiento',
+    description: 'Desplegamos tu solución, monitoreamos su rendimiento y brindamos soporte post-lanzamiento.',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" /></svg>`,
+  },
+];
+const stepDelays = ['delay-100', 'delay-200', 'delay-300', 'delay-400'];
+---
+
+<section id="process" class="relative py-24 md:py-32 overflow-hidden">
+  <!-- Background -->
+  <div class="absolute inset-0 bg-gradient-to-b from-nc-deep via-nc-deep-dark/50 to-nc-deep"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="scroll-animate fade-up inline-block px-3 py-1 text-nc-sky text-sm font-medium border border-nc-sky/20 rounded-full bg-nc-sky/5 mb-6">
+        Proceso de Trabajo
+      </span>
+      <h2 class="scroll-animate fade-up delay-100 text-3xl md:text-4xl lg:text-5xl font-bold">
+        De la idea a la
+        <span class="bg-gradient-to-r from-nc-sky to-nc-sky-light bg-clip-text text-transparent">realidad</span>
+      </h2>
+      <p class="scroll-animate fade-up delay-200 mt-6 text-nc-gray text-lg leading-relaxed">
+        Un proceso claro y transparente para que sepas exactamente en qué etapa está tu proyecto.
+      </p>
+    </div>
+
+    <!-- Steps -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4">
+      {steps.map((step, index) => (
+        <div class={`scroll-animate fade-up ${stepDelays[index]} relative group`}>
+          <div class="relative p-6 md:p-8 bg-white/[0.02] border border-white/[0.06] rounded-2xl hover:border-nc-sky/20 transition-all duration-500 h-full">
+            <!-- Step number -->
+            <div class="text-5xl font-extrabold text-nc-sky/10 absolute top-4 right-6 group-hover:text-nc-sky/20 transition-colors duration-300">
+              {step.number}
+            </div>
+
+            <!-- Icon -->
+            <div class="w-12 h-12 rounded-xl bg-nc-sky/10 border border-nc-sky/20 flex items-center justify-center text-nc-sky mb-5 group-hover:bg-nc-sky/20 transition-all duration-300">
+              <Fragment set:html={step.icon} />
+            </div>
+
+            <!-- Content -->
+            <h3 class="text-lg font-semibold text-white mb-3">{step.title}</h3>
+            <p class="text-nc-gray text-sm leading-relaxed">{step.description}</p>
+          </div>
+
+          {/* Connector line (desktop) */}
+          {index < steps.length - 1 && (
+            <div class="hidden lg:block absolute top-1/2 -right-2 w-4 h-px bg-gradient-to-r from-nc-sky/30 to-transparent z-10"></div>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

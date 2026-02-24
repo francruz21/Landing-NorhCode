@@ -1,0 +1,84 @@
+---
+const services = [
+  {
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" /></svg>`,
+    title: 'Desarrollo Web',
+    description: 'Sitios y aplicaciones web modernas, rápidas y optimizadas. SPAs, SSR, e-commerce y plataformas complejas.',
+    tags: ['React', 'Next.js', 'Astro'],
+  },
+  {
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>`,
+    title: 'Aplicaciones Móviles',
+    description: 'Apps nativas y multiplataforma con experiencias fluidas, rendimiento óptimo y diseño impecable.',
+    tags: ['React Native', 'Flutter', 'iOS/Android'],
+  },
+  {
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z" /></svg>`,
+    title: 'Sistemas a Medida',
+    description: 'ERPs, CRMs, dashboards y sistemas internos diseñados específicamente para tu operación.',
+    tags: ['Node.js', 'PostgreSQL', 'APIs'],
+  },
+  {
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" /></svg>`,
+    title: 'Integraciones API',
+    description: 'Conectamos tus sistemas con servicios externos: pasarelas de pago, CRMs, ERPs y APIs de terceros.',
+    tags: ['REST', 'GraphQL', 'Webhooks'],
+  },
+  {
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182M2.985 19.644l3.181-3.182" /></svg>`,
+    title: 'Automatización',
+    description: 'Automatizamos procesos repetitivos para que tu equipo se enfoque en lo que realmente importa.',
+    tags: ['Workflows', 'Bots', 'Scrapers'],
+  },
+];
+const serviceDelays = ['delay-100', 'delay-200', 'delay-300', 'delay-100', 'delay-200'];
+---
+
+<section id="services" class="relative py-24 md:py-32">
+  <!-- Background decoration -->
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-nc-sky/[0.02] to-transparent"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="scroll-animate fade-up inline-block px-3 py-1 text-nc-sky text-sm font-medium border border-nc-sky/20 rounded-full bg-nc-sky/5 mb-6">
+        Nuestros Servicios
+      </span>
+      <h2 class="scroll-animate fade-up delay-100 text-3xl md:text-4xl lg:text-5xl font-bold">
+        Soluciones
+        <span class="bg-gradient-to-r from-nc-sky to-nc-sky-light bg-clip-text text-transparent">digitales integrales</span>
+      </h2>
+      <p class="scroll-animate fade-up delay-200 mt-6 text-nc-gray text-lg leading-relaxed">
+        Ofrecemos un ecosistema completo de servicios tecnológicos para llevar tu proyecto desde la idea hasta la producción.
+      </p>
+    </div>
+
+    <!-- Services grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {services.map((service, index) => (
+        <div class={`scroll-animate fade-up ${serviceDelays[index]} group relative p-6 md:p-8 bg-white/[0.02] border border-white/[0.06] rounded-2xl hover:bg-white/[0.05] hover:border-nc-sky/20 transition-all duration-500`}>
+          <!-- Icon -->
+          <div class="w-14 h-14 rounded-xl bg-nc-sky/10 border border-nc-sky/20 flex items-center justify-center text-nc-sky mb-6 group-hover:bg-nc-sky/20 group-hover:scale-110 transition-all duration-300">
+            <Fragment set:html={service.icon} />
+          </div>
+
+          <!-- Content -->
+          <h3 class="text-xl font-semibold text-white mb-3">{service.title}</h3>
+          <p class="text-nc-gray leading-relaxed mb-5">{service.description}</p>
+
+          <!-- Tags -->
+          <div class="flex flex-wrap gap-2">
+            {service.tags.map((tag) => (
+              <span class="px-3 py-1 text-xs font-medium text-nc-sky/80 bg-nc-sky/5 border border-nc-sky/10 rounded-full">
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          <!-- Hover glow -->
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-nc-sky/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl"></div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
