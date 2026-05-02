@@ -31,7 +31,7 @@
 | Servicios | `Services.astro` | Completo — 5 servicios con íconos, tags, hover effects |
 | Proceso | `Process.astro` | Completo — 4 pasos tipo cards con íconos y números |
 | Tecnologías | `Technologies.astro` | Completo — grid de 16 tecnologías + CTA fuerte |
-| Contacto | `Contact.astro` | Completo — formulario (nombre, email, empresa, mensaje), envío via FormSubmit a fran.beron21@gmail.com, estados de loading/success/error |
+| Contacto | `Contact.astro` | Completo — formulario (nombre, email, empresa, mensaje), envío via FormSubmit a fran.beron26@gmail.com, estados de loading/success/error |
 | Footer | `Footer.astro` | Completo — logo, links, redes sociales (LinkedIn, GitHub, Instagram), copyright |
 
 ### 4. Página principal (`src/pages/index.astro`)

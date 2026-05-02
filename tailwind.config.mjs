@@ -4,18 +4,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        'nc-sky': '#00BFFF',
-        'nc-sky-light': '#33CCFF',
-        'nc-sky-dark': '#0099CC',
-        'nc-deep': '#0A1F44',
-        'nc-deep-light': '#122D5E',
-        'nc-deep-dark': '#061230',
-        'nc-slate': '#1E293B',
-        'nc-gray': '#94A3B8',
-        'nc-light': '#F1F5F9',
+        'nc-sky': '#4BA5D3',
+        'nc-sky-light': '#A9D7F7',
+        'nc-sky-dark': '#1A6E92',
+        'nc-warm': '#D79E48',
+        'nc-warm-light': '#F4C67F',
+        'nc-deep': '#09111C',
+        'nc-deep-light': '#121F33',
+        'nc-deep-dark': '#04080F',
+        'nc-bg': '#070E18',
+        'nc-slate': '#354964',
+        'nc-gray': '#9FB1C1',
+        'nc-light': '#E4EBF4',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Manrope', 'Inter', 'system-ui', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-out forwards',

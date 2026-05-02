@@ -28,13 +28,13 @@ const steps = [
 const stepDelays = ['delay-100', 'delay-200', 'delay-300', 'delay-400'];
 ---
 
-<section id="process" class="relative py-24 md:py-32 overflow-hidden">
+<section id="process" class="relative py-20 md:py-24 overflow-hidden">
   <!-- Background -->
   <div class="absolute inset-0 bg-gradient-to-b from-nc-deep via-nc-deep-dark/50 to-nc-deep"></div>
 
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Header -->
-    <div class="text-center max-w-3xl mx-auto mb-16">
+    <div class="text-center max-w-3xl mx-auto mb-12">
       <span class="scroll-animate fade-up inline-block px-3 py-1 text-nc-sky text-sm font-medium border border-nc-sky/20 rounded-full bg-nc-sky/5 mb-6">
         Proceso de Trabajo
       </span>
@@ -42,7 +42,7 @@ const stepDelays = ['delay-100', 'delay-200', 'delay-300', 'delay-400'];
         De la idea a la
         <span class="bg-gradient-to-r from-nc-sky to-nc-sky-light bg-clip-text text-transparent">realidad</span>
       </h2>
-      <p class="scroll-animate fade-up delay-200 mt-6 text-nc-gray text-lg leading-relaxed">
+      <p class="scroll-animate fade-up delay-200 mt-4 text-nc-gray text-lg leading-relaxed">
         Un proceso claro y transparente para que sepas exactamente en qué etapa está tu proyecto.
       </p>
     </div>
@@ -51,7 +51,7 @@ const stepDelays = ['delay-100', 'delay-200', 'delay-300', 'delay-400'];
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4">
       {steps.map((step, index) => (
         <div class={`scroll-animate fade-up ${stepDelays[index]} relative group`}>
-          <div class="relative p-6 md:p-8 bg-white/[0.02] border border-white/[0.06] rounded-2xl hover:border-nc-sky/20 transition-all duration-500 h-full">
+          <div class="relative p-6 md:p-8 bg-nc-deep-light/15 border border-nc-slate/15 rounded-2xl hover:border-nc-sky/20 transition-all duration-500 h-full shadow-lg shadow-black/20">
             <!-- Step number -->
             <div class="text-5xl font-extrabold text-nc-sky/10 absolute top-4 right-6 group-hover:text-nc-sky/20 transition-colors duration-300">
               {step.number}
